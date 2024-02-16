@@ -1,0 +1,21 @@
+﻿@page "/"
+
+
+<div class="container flex flex-column">
+  <Logo></Logo>
+</div>
+
+
+
+@code {
+    private async Task RedirecionarParaOutraPagina()
+    {
+        await Task.Delay(3000); // Espera por 3 segundos (ajuste conforme necessário)
+        _navigationManager.NavigateTo("login"); 
+    }
+
+    protected override async void OnInitialized()
+    {
+        await RedirecionarParaOutraPagina();
+    }
+}

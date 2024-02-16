@@ -1,0 +1,22 @@
+<div class="not-robot">
+   <InputCheckbox  class="input-not-robot" placeholder="Não sou um robô" @bind-Value="IsChecked" @oninput="HandleCheckboxChange"/> Não sou um robô 
+</div>
+
+@code{
+
+  [Parameter]
+  public bool IsChecked { get; set; }
+
+  [Parameter]
+  public EventCallback<bool> IsCheckedChanged { get; set; }
+
+  private async Task HandleCheckboxChange(ChangeEventArgs e)
+  {
+    await localStorage.SetItemAsync("IsChecked", IsChecked.ToString());
+    IsChecked = (bool)e.Value!;
+    await IsCheckedChanged.InvokeAsync(IsChecked);
+
+  }
+
+}
+

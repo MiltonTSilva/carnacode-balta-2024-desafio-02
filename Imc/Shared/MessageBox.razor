@@ -1,0 +1,29 @@
+<div class='popup-container @(IsVisible ? "show" : "hide")'>
+    <div class="popup">
+        <div class="popup-content">
+            <p>@ErrorMessage</p>
+            <button class="button-primary" @onclick="Close">Fechar</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code {
+
+    [Parameter]
+    public bool IsVisible { get; set; }
+
+    [Parameter]
+    public string ErrorMessage { get; set; }= string.Empty;
+
+    [Parameter]
+    public EventCallback<bool> IsVisibleChanged { get; set; }
+
+    private void Close()
+    {
+        IsVisible = false;
+        IsVisibleChanged.InvokeAsync(false);
+    }
+}

@@ -1,0 +1,125 @@
+@page "/createaccount"
+
+<div class="container flex flex-column">
+      <div class="child flex flex-column flex-justify-content-center">
+        <div class="child-margin-top">
+          <Logo></Logo>
+        </div>
+        <div class="flex flex-column flex-center">
+          <div class="label flex flex-column">
+            <label for="label" class="label">Crie sua conta </label>
+            <label for="descrition" class="label-description"
+              >Você precisa criar uma conta
+            </label>
+          </div>
+
+
+                <div>
+                  <InputText class="input-text" placeholder="Seu nome" @bind-Value="@Name"></InputText>
+                </div>
+
+                <div>
+                  <InputText class="input-text" placeholder="Seu e-mail" @bind-Value="@Email"></InputText>
+                </div>
+
+                <div>
+                  <InputText class="input-text" placeholder="Sua senha" @bind-Value="@Password"></InputText>
+                </div>
+
+                <div>
+                  <InputText class="input-text" placeholder="Confirme sua senha" @bind-Value="@ConfirmPassword"></InputText>
+                </div>
+
+                <div>
+                  <NotRobot @bind-IsChecked="IsChecked" ></NotRobot>
+                </div>
+                <div>
+                  <button class="button-primary" type="submit" @onclick="Createaccount">Criar conta</button>
+                </div>
+                <div>
+                  <button class="button-secondary" type="button" @onclick="Loginto">Fazer login</button>
+                </div>
+
+        </div>
+      </div>
+    </div>
+
+    <MessageBox IsVisible="@IsErrorPopupVisible" ErrorMessage="@ErrorMessage" IsVisibleChanged="OnIsErrorPopupVisibleChanged" />
+
+@code {
+
+  public string Name = string.Empty;
+  public string Email = string.Empty;
+  public string Password = string.Empty;
+  public string ConfirmPassword = string.Empty;
+  public bool IsChecked = false;
+  private bool IsErrorPopupVisible { get; set; }
+  private string ErrorMessage { get; set; } = string.Empty;
+
+  private void Createaccount()
+  {
+    localStorage.SetItemAsync("Name", Name);
+    localStorage.SetItemAsync("Email", Email);
+    localStorage.SetItemAsync("Password", Password);
+    localStorage.SetItemAsync("ConfirmPassword", ConfirmPassword);
+    
+
+    if(Name == string.Empty)
+    {
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Campo nome obrigatório!";
+    }
+    else if(Email  == string.Empty)
+    {
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Campo email obrigatório!";
+    }
+    else if(Password  == string.Empty)
+    {
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Campo senha obrigatório!";
+    }
+    else if(ConfirmPassword  == string.Empty)
+    {
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Campo confirme sua senha obrigatório!";
+    }
+    else if(ConfirmPassword != Password)
+    {
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Confirmação de senha não é igual a senha!";
+    }
+    else if (IsChecked == false)
+    {
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Marque a opção 'Não sou um robô'";
+    }
+    else
+    {
+      IsChecked = false;
+      localStorage.SetItemAsync("IsChecked", IsChecked.ToString());
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Conta criada com sucesso!";
+    }
+
+
+  }
+
+  private void Loginto()
+  {
+      _navigationManager.NavigateTo("login");
+  }
+
+
+  private void OnIsErrorPopupVisibleChanged(bool isVisible)
+  {
+      IsErrorPopupVisible = isVisible;
+  } 
+
+  private void HandleCheckboxValueChanged(bool value)
+  {
+      IsChecked = value;
+      StateHasChanged(); // Força a atualização da UI
+  }
+
+}

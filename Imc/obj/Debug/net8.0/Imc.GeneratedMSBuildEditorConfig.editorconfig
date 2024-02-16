@@ -1,0 +1,67 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Imc
+build_property.RootNamespace = Imc
+build_property.ProjectDir = C:\Cursos\Blazor\Balta\Desafio02\carnacode-balta-2024-desafio-02\imc\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Cursos\Blazor\Balta\Desafio02\carnacode-balta-2024-desafio-02\imc
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/CreateAccount.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlQWNjb3VudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/History.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Shared/Logo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ28ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Shared/MessageBox.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1lc3NhZ2VCb3gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Shared/NotRobot.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5vdFJvYm90LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-j6tei9dcxl
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zgyv77ewwo
