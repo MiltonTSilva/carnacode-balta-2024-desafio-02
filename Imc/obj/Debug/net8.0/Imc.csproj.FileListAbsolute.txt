@@ -2079,3 +2079,6 @@ C:\Cursos\Blazor\Balta\Desafio02\carnacode-balta-2024-desafio-02\imc\obj\Debug\n
 C:\Cursos\Blazor\Balta\Desafio02\carnacode-balta-2024-desafio-02\imc\obj\Debug\net8.0\refint\Imc.dll
 C:\Cursos\Blazor\Balta\Desafio02\carnacode-balta-2024-desafio-02\imc\obj\Debug\net8.0\Imc.pdb
 C:\Cursos\Blazor\Balta\Desafio02\carnacode-balta-2024-desafio-02\imc\obj\Debug\net8.0\ref\Imc.dll
+C:\Cursos\Blazor\Balta\Desafio02\carnacode-balta-2024-desafio-02\imc\obj\Debug\net8.0\scopedcss\Pages\History.razor.rz.scp.css
+C:\Cursos\Blazor\Balta\Desafio02\carnacode-balta-2024-desafio-02\imc\obj\Debug\net8.0\scopedcss\Pages\Login.razor.rz.scp.css
+C:\Cursos\Blazor\Balta\Desafio02\carnacode-balta-2024-desafio-02\imc\obj\Debug\net8.0\scopedcss\Pages\Imc-calculation.razor.rz.scp.css

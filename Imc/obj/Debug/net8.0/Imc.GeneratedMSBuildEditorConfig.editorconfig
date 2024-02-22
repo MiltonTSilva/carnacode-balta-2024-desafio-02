@@ -30,16 +30,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlQWNjb3VudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/History.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yeS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Shared/Logo.razor]
@@ -65,3 +57,15 @@ build_metadata.AdditionalFiles.CssScope = b-j6tei9dcxl
 [C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zgyv77ewwo
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/History.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ugjpdjbwcw
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/Imc-calculation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1jLWNhbGN1bGF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-eszh4sc7zy
+
+[C:/Cursos/Blazor/Balta/Desafio02/carnacode-balta-2024-desafio-02/imc/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jvwl78ee11

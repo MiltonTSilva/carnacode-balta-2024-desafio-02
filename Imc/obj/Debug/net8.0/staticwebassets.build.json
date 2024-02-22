@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ntpHyJj1fEAqi8KhYmfPeG7qOx6+qOUu40jwvbkUZ30=",
+  "Hash": "+d745Z7PtLIIj+U9l0IkOzmCYRew06zfwYFqktktomE=",
   "Source": "Imc",
   "BasePath": "/",
   "Mode": "Root",
@@ -7978,25 +7978,6 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\css\\Login.css",
-      "SourceId": "Imc",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/Login.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Login.css"
-    },
-    {
       "Identity": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\favicon.png",
       "SourceId": "Imc",
       "SourceType": "Discovered",
@@ -8109,6 +8090,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\manifest.webmanifest"
+    },
+    {
+      "Identity": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\menos.png",
+      "SourceId": "Imc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "menos.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\menos.png"
+    },
+    {
+      "Identity": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\verifica.png",
+      "SourceId": "Imc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "verifica.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\verifica.png"
     }
   ]
 }

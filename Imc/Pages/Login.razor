@@ -1,47 +1,45 @@
 @page "/login"
 
-
 <div class="container flex flex-column">
-      <div class="child flex flex-column flex-justify-content-center">
-        <div class="child-margin-top">
-          <Logo></Logo>
-        </div>
-        <div class="flex flex-column flex-center">
-          <div class="label flex flex-column">
-            <label for="label" class="label">Faça seu Login</label>
-            <label for="descrition" class="label-description"
-              >Insira suas informações antes de medir seu IMC</label>
-          </div>
-           <div>
-            <InputText class="input-text" placeholder="Seu e-mail" @bind-Value="@Email"></InputText>
-            
-          </div>
-          <div>
-             <InputText class="input-text" placeholder="Sua senha" @bind-Value="@Password"></InputText>
-          </div>
-          
-          <div class="not-robot">
-              <NotRobot @bind-IsChecked="IsChecked" ></NotRobot>
-          </div>
+  <div class="child flex flex-column flex-justify-content-center">
+    <div class="child-margin-top">
+      <Logo></Logo>
+    </div>
+    <div class="flex flex-column flex-center">
+      <div class="label flex flex-column">
+        <label for="label" class="label">Faça seu Login</label>
+        <label for="descrition" class="label-description">Insira suas informações antes de medir seu IMC</label>
+      </div>
+      <div>
+        <InputText class="input-text" placeholder="Seu e-mail" @bind-Value="@Email"></InputText>
+      </div>
+      <div>
+        <InputText class="input-text" placeholder="Sua senha" @bind-Value="@Password"></InputText>
+      </div>
 
-          <div>
-            <button class="button-primary" @onclick="Loginto">Fazer Login</button>
-          </div>
-          <div>
-            <button class="button-secondary" type="button" @onclick='CreateAccount'>
-              Não tenho um acesso
-            </button>
-         
-        </div>
+      <div class="not-robot">
+        <NotRobot @bind-IsChecked="IsChecked"></NotRobot>
+      </div>
+
+      <div>
+        <button class="button-primary" @onclick="Loginto">Fazer Login</button>
+      </div>
+      <div>
+        <button class="button-secondary" type="button" @onclick='CreateAccount'>
+          Não tenho um acesso
+        </button>
+
       </div>
     </div>
-     
-     </div> 
+  </div>
 
-    <MessageBox IsVisible="@IsErrorPopupVisible" ErrorMessage="@ErrorMessage" IsVisibleChanged="OnIsErrorPopupVisibleChanged" />
+</div>
+
+<MessageBox IsVisible="@IsErrorPopupVisible" ErrorMessage="@ErrorMessage"
+  IsVisibleChanged="OnIsErrorPopupVisibleChanged" />
 
 
-@code 
+@code
 {
   public string Email = string.Empty;
   public string Password = string.Empty;
@@ -56,28 +54,28 @@
   {
     lsEmail = await localStorage.GetItemAsync("Email");
     lsPassword = await localStorage.GetItemAsync("Password");
-    lsIsChecked  = await localStorage.GetItemAsync("IsChecked");
+    lsIsChecked = await localStorage.GetItemAsync("IsChecked");
   }
 
   private void Loginto()
   {
 
-    if(Email  == string.Empty)
+    if (Email == string.Empty)
     {
       IsErrorPopupVisible = true;
       ErrorMessage = "Campo email obrigatório!";
     }
-    else if(Password  == string.Empty)
+    else if (Password == string.Empty)
     {
       IsErrorPopupVisible = true;
       ErrorMessage = "Campo senha obrigatório!";
     }
-    else if(Email  != lsEmail)
+    else if (Email != lsEmail)
     {
       IsErrorPopupVisible = true;
       ErrorMessage = "E-mail não cadastrado!";
     }
-    else if(Email  == lsEmail)
+    else if (Email == lsEmail)
     {
       if (Password != lsPassword)
       {
@@ -91,27 +89,27 @@
       }
       else
       {
-        _navigationManager.NavigateTo("history");
+        _navigationManager.NavigateTo("imc-calculation");
       }
-    }  
+    }
   }
-  
+
 
   private void CreateAccount()
   {
-     _navigationManager.NavigateTo("createaccount"); 
+    _navigationManager.NavigateTo("createaccount");
   }
 
 
   private void OnIsErrorPopupVisibleChanged(bool isVisible)
   {
-      IsErrorPopupVisible = isVisible;
-  } 
+    IsErrorPopupVisible = isVisible;
+  }
 
   private void HandleCheckboxValueChanged(bool value)
   {
-      IsChecked = value;
-      StateHasChanged(); // Força a atualização da UI
+    IsChecked = value;
+    StateHasChanged(); // Força a atualização da UI
   }
 
 }

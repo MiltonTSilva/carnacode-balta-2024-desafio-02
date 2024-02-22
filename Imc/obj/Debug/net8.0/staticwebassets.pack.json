@@ -21,10 +21,6 @@
       "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
-      "Id": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\css\\Login.css",
-      "PackagePath": "staticwebassets\\css\\Login.css"
-    },
-    {
       "Id": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -59,6 +55,14 @@
     {
       "Id": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\manifest.webmanifest",
       "PackagePath": "staticwebassets\\manifest.webmanifest"
+    },
+    {
+      "Id": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\menos.png",
+      "PackagePath": "staticwebassets\\menos.png"
+    },
+    {
+      "Id": "C:\\Cursos\\Blazor\\Balta\\Desafio02\\carnacode-balta-2024-desafio-02\\imc\\wwwroot\\verifica.png",
+      "PackagePath": "staticwebassets\\verifica.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Imc.Microsoft.AspNetCore.StaticWebAssets.props",

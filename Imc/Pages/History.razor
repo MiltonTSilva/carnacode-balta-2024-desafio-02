@@ -1,4 +1,48 @@
-<!-- Button trigger modal -->
 @page "/history"
 
-<h1>History</h1>
+<style>
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+
+<div class="container flex flex-column flex-center">
+    <span class="icon-imc flex flex-center">
+        <Logo></Logo>
+    </span>
+    <label class="title">Histórico</label>
+
+    <input class="input-text input-history" type="text" name="search" id="search" placeholder="Pesquisar..." />
+
+
+    <div class="container-history flex">
+        <div class="square"></div>
+
+        <div class="details">
+            <div class="label">
+                <label for="label-weight" class="label-weight">Peso ideal
+                    <img src="./verifica.png" alt="" />
+                </label>
+                <label for="label-datetime" class="label-datetime">8m atrás</label>
+            </div>
+
+            <p>
+                Parabéns, você está no seu peso ideal, continue mantendo este estilo!
+            </p>
+        </div>
+    </div>
+
+    <div class="container-history flex">
+        <div class="square"></div>
+
+        <div class="details">
+            <div class="label">
+                <label for="label-weight" class="label-weight">Sobrepeso <img src="./menos.png" alt="" /></label>
+                <label for="label-datetime" class="label-datetime">12/10/2023</label>
+            </div>
+
+            <p>Estamos quase lá! Faça alguns ajustes para ficar no peso ideal!</p>
+        </div>
+    </div>
+</div>

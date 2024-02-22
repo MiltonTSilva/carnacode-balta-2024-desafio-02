@@ -160,3 +160,91 @@ main[b-j6tei9dcxl] {
         overflow-y: auto;
     }
 }
+/* /Pages/History.razor.rz.scp.css */
+body[b-ugjpdjbwcw] {
+  background-color: #ffffff;
+}
+
+.container[b-ugjpdjbwcw] {
+  min-height: 250px;
+}
+
+.container-history[b-ugjpdjbwcw] {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 343px;
+}
+
+.square[b-ugjpdjbwcw] {
+  background-color: #f6f6f6;
+  /* border: solid 1px #000000; */
+  border-radius: 8px;
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.input-history[b-ugjpdjbwcw] {
+  border-radius: 20px;
+  width: 343px;
+}
+
+.details[b-ugjpdjbwcw] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.details > p[b-ugjpdjbwcw] {
+  border-bottom: solid 1px #e8e8e8;
+  padding-bottom: 10px;
+}
+
+
+.label-weight[b-ugjpdjbwcw] {
+  color: #bdbdbd;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.label-datetime[b-ugjpdjbwcw] {
+  color: #bdbdbd;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.label > label > img[b-ugjpdjbwcw] {
+  height: 16px;
+  width: 16px;
+}
+/* /Pages/Imc-calculation.razor.rz.scp.css */
+body[b-eszh4sc7zy] {
+  background-color: #ffffff;
+}
+
+
+.greaterThan65[b-eszh4sc7zy] {
+  margin-bottom: 10px;
+  width: 313px;
+}
+
+.input-greaterThan65[b-eszh4sc7zy] {
+  height: 16px;
+  border-radius: 16px;
+}
+
+.label-greaterThan65[b-eszh4sc7zy] {
+  color: #666666;
+  height: 17px;
+  width: 313px;
+}
+
+
+
+/* /Pages/Login.razor.rz.scp.css */
+.child-margin-top[b-jvwl78ee11] {
+  margin-top: -60px;
+}

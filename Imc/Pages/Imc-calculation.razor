@@ -1,0 +1,34 @@
+@page "/imc-calculation"
+<style>
+  body {
+    background-color: #ffffff;
+  }
+</style>
+
+<div class="conteiner flex flex-column flex-center">
+  <label class="title">Cálculo de IMC</label>
+
+  <div>
+    <input class="input-text" type="number" name="height" id="height" placeholder="Altura" />
+  </div>
+  <div>
+    <input class="input-text" type="number" name="weight" id="weight" placeholder="Peso" />
+  </div>
+  <div>
+    <input class="input-text" type="text" name="sex" id="sex" placeholder="Sexo" />
+  </div>
+
+  <div class="greaterThan65">
+    <input class="input-greaterThan65" type="checkbox" name="greaterThan65" id="greaterThan65"
+      placeholder="Eu tenho 65 anos ou mais" />
+    <label class="label-greaterThan65">Eu tenho 65 anos ou mais</label>
+  </div>
+  <div>
+    <button class="button-primary" type="submit">Calcular meu IMC</button>
+  </div>
+  <div>
+    <button class="button-secondary" type="button">
+      Entenda o cálculo
+    </button>
+  </div>
+</div>
