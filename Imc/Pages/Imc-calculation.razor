@@ -6,16 +6,22 @@
 </style>
 
 <div class="conteiner flex flex-column flex-center">
+
   <label class="title">Cálculo de IMC</label>
 
   <div>
-    <input class="input-text" type="number" name="height" id="height" placeholder="Altura" />
+    <label for="Height">Altura</label>
+    <InputNumber class="input-text" placeholder="Altura" @bind-Value="@Height">Altura</InputNumber>
   </div>
+
   <div>
-    <input class="input-text" type="number" name="weight" id="weight" placeholder="Peso" />
+    <label for="Weight">Peso</label>
+    <InputNumber class="input-text" placeholder="Peso" @bind-Value="@Weight">Peso</InputNumber>
   </div>
+
   <div>
-    <input class="input-text" type="text" name="sex" id="sex" placeholder="Sexo" />
+    <label for="Sex">Sexo</label>
+    <InputText class="input-text" placeholder="Sexo" @bind-Value="@Sex">Sexo</InputText>
   </div>
 
   <div class="greaterThan65">
@@ -24,7 +30,7 @@
     <label class="label-greaterThan65">Eu tenho 65 anos ou mais</label>
   </div>
   <div>
-    <button class="button-primary" type="submit">Calcular meu IMC</button>
+    <button class="button-primary" @onclick="Calculate">Calcular meu IMC</button>
   </div>
   <div>
     <button class="button-secondary" type="button">
@@ -32,3 +38,42 @@
     </button>
   </div>
 </div>
+
+<MessageBox IsVisible="@IsErrorPopupVisible" ErrorMessage="@ErrorMessage"
+  IsVisibleChanged="OnIsErrorPopupVisibleChanged" />
+
+@code {
+
+  public int Height;
+  public int Weight;
+  public String Sex = string.Empty;
+  private bool IsErrorPopupVisible { get; set; } = false;
+  private string ErrorMessage { get; set; } = string.Empty;
+
+  private void Calculate()
+  {
+    if (Height == 0)
+    {
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Campo altura obrigatório!";
+    }
+    else if (Weight == 0)
+    {
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Campo peso obrigatório!";
+    }
+    else if (Sex == string.Empty)
+    {
+      IsErrorPopupVisible = true;
+      ErrorMessage = "Campo sexo obrigatório!";
+    }
+
+    IsErrorPopupVisible = true;
+    ErrorMessage = "IMC calculado com sucesso!";
+  }
+
+  private void OnIsErrorPopupVisibleChanged(bool isVisible)
+  {
+    IsErrorPopupVisible = isVisible;
+  }
+}
